@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+  }
+  
+  /* Hero image section */
+.hero {
+  position: relative;
+  height: 110vh;
+  background-image: url('../image1.JPG');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Fira Mono', monospace;
+  font-weight: 700;
+  z-index: 1;
+}
+  
+  header p {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  /* Section as flex layout */
+  section {
+    display: flex;
+    align-items: stretch;
+    min-height: calc(100vh - 80vh - 30px - 10px); /* hero + header + footer */
+  }
+  
+  /* Navigation column */
+  nav {
+    width: 15%;
+    background: #d1e2f7;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 15px 0;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    background-color: #6596cf;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  nav ul li a:hover {
+    background-color: #5077a8;
+  }
+  
+  /* Main content area */
+  article {
+    width: 85%;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  article img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Style for 'here' link inside paragraphs */
+  article p a {
+    color: #6596cf;
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  article p a:hover {
+    color: #5077a8;
+    text-decoration: underline;
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 600px) {
+    section {
+      flex-direction: column;
+    }
+  
+    nav, article {
+      width: 100%;
+    }
+  
+    .hero {
+      font-size: 32px;
+      padding: 20px;
+      height: 70vh; /* <-- added this */
+    }
+  }  
+  
+  /* Footer */
+  footer {
+    background-color: #6596cf;
+    padding: 30px 10px;       /* Tall footer to keep things centered */
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;      /* Vertically center the content */
+    flex-direction: column;   /* Stack p and small vertically */
+  }
+  
+  .footer-content {
+    text-align: center;
+    line-height: 1.2;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 0.9em;         /* Much smaller text */
+  }
+  
+  footer small {
+    display: block;
+    color: rgba(255, 255, 255, 0.4); /* Translucent white */
+    font-size: 0.7em;                /* 3x smaller than title */
+    margin-top: 2px;                 /* Tight spacing */
+    line-height: 1.1;
+  }  
+  
+  
+  
+    
